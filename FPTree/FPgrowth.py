@@ -262,7 +262,6 @@ if __name__ == '__main__':
     fp_tree, head_node_table = create_tree(frozen_data_set, min_support)
     fp_tree.display()
     frequent_patterns = {}
-    print("frequent_patterns:", frequent_patterns)
     prefix = set([])
     mine_fp_tree(head_node_table, prefix, frequent_patterns, min_support)
     min_confidence = 0.6
